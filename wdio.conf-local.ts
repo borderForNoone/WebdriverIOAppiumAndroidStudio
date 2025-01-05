@@ -5,13 +5,12 @@ export const config = {
     specs: [
         './test/specs/**/*.ts'
     ],
-    exclude: [],
     maxInstances: 1,
 
     capabilities: [{
         platformName: "Android",
         "appium:deviceName": "emulator-5554",
-        "appium:platformVersion": "15",
+        "appium:platformVersion": "11",
         "appium:automationName": "UiAutomator2",
         "appium:app": join(process.cwd(), "./android.wdio.native.app.v1.0.8.apk"),
         "appium:autoAcceptAlerts": true,
